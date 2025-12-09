@@ -1,0 +1,103 @@
+/* Fondo suave pastel */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f2ff;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Tarjeta principal */
+.container {
+    background: white;
+    padding: 25px;
+    width: 380px;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.title {
+    text-align: center;
+    color: #6a4cad;
+    margin-bottom: 20px;
+}
+
+/* Grupo del input */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #d6c7ff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#taskInput:focus {
+    border-color: #b39aff;
+}
+
+/* Botón pastel */
+.btn-add {
+    background: #b39aff;
+    border: none;
+    border-radius: 10px;
+    width: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.btn-add:hover {
+    background: #9a84f7;
+}
+
+/* Cada tarea */
+li {
+    background: #f2ecff;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.07);
+}
+
+/* Si está completada */
+.completed {
+    text-decoration: line-through;
+    color: #6d55b6;
+    opacity: 0.7;
+}
+/* Íconos personalizados minimalistas */
+.icon-btn {
+    background: none;
+    border: none0;
+    cursor: pointer;
+}
+
+/* Efecto pastel */
+.icon-btn svg {
+    stroke: #6a4cad;
+    transition: 0.2s;
+}
+
+.icon-btn:hover svg {
+    stroke: #3e2a7b;
+    transform: scale(1.1);
+}
+/* Botón Check */
+.check-btn svg {
+    stroke: #9b7ff4;
+}
+.check-btn:hover svg {
+    stroke: #6a4cad;
+}
